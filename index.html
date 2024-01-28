@@ -7,36 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <style>
-        * {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
-    <title>RANDOM PASSWORD GENERATOR</title>
+    <title>SECURE PASSWORD GENERATOR</title>
 </head>
 <body>
-    <main class="container">
-        <h1 class="title">RANDOM PASSWORD GENERATOR</h1>
-
-        <section class="inputWrapper">
-            <label for="lowerCaseInput">INCLUDE LOWERCASE</label>
-            <input type="checkbox" id="lowerCaseInput" />
-
-            <label for="upperCaseInput">INCLUDE UPPERCASE</label>
-            <input type="checkbox" id="upperCaseInput"/> 
-
-            <label for="numbersInput">INCLUDE NUMBERS</label>
-            <input type="checkbox" id="numbersInput"/> 
-
-            <label for="symbolsInput">INCLUDE SYMBOLS</label>
-            <input type="checkbox" id="symbolsInput"/>
-
-            <button onclick=generatePassword() id="generatePasswordButton">GENERATE PASSWORD</button>
-
-            <p id="generatedPassword"></p>
-        </section>
-    </main>
 
     <script src="./index.js"></script>
 </body>
