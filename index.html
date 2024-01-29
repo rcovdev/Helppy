@@ -10,7 +10,41 @@
     <title>SECURE PASSWORD GENERATOR</title>
 </head>
 <body>
-
+    <h1 class="title">SECURE PASSWORD GENERATOR</h1>
+    <main>
+        <section class="top-container">
+            <aside class="top-wrapper">
+                <div class="option">
+                    <label for="lowerCaseInput">INCLUDE LOWERCASE</label>
+                    <input type="checkbox" id="lowerCaseInput">
+                </div>
+                <div class="option">
+                    <label for="upperCaseInput">INCLUDE UPPERCASE</label>
+                    <input type="checkbox" id="upperCaseInput">
+                </div>
+                <div class="option">
+                    <label for="numbersInput">INCLUDE NUMBERS</label>
+                    <input type="checkbox" id="numbersInput">
+                </div>
+                <div class="option">
+                    <label for="symbolsInput">INCLUDE SYMBOLS</label>
+                    <input type="checkbox" id="symbolsInput">
+                </div>
+    
+                <div class="length">
+                    <label for="lengthInput">PASSWORD LENGTH</label>
+                    <input min="5" max="20" type="number" id="lengthInput" value="5" placeholder="5">
+                </div>
+            </aside>
+        </section>
+        <section class="bottom-container">
+            <aside class="bottom-wrapper">
+                <button onclick=generatePassword() id="generatePasswordBtn">GENERATE PASSWORD</button>
+                <p id="generatedPassword"></p>
+            </aside>
+        </section>
+    </main>
+    
     <script src="./index.js"></script>
 </body>
 </html>
