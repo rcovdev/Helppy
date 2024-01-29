@@ -21,7 +21,7 @@ const generatePassword = () => {
     selectedChars += numbersInput.checked ? numberChars : "";
     selectedChars += symbolsInput.checked ? symbolChars : "";
 
-    if(selectedChars.length === 0 || selectedChars.length === "0") {
+    if(selectedChars.length === 0) {
         response.classList.add("error");
         response.textContent = "Please select at least one set of characters";
         return;
@@ -32,9 +32,15 @@ const generatePassword = () => {
         password += selectedChars[j];
     }
 
-    response.classList.remove("error");
-    response.classList.add("allowed");
-    response.textContent = password;
+    if(passwordLength >= 5 && passwordLength <= 20) {
+        response.classList.remove("error");
+        response.classList.add("allowed");
+        response.textContent = password;
+    } else {
+        response.classList.add("error");
+        response.textContent = "Password length must be a number between 5-20";
+        return;
+    }
 
     response.addEventListener("click", () => {
         navigator.clipboard.writeText(password)
