@@ -1,11 +1,9 @@
-// libraries
-import { Link } from "react-router-dom";
-// styles
 import "./Navbar.scss";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-    const [active, setActive] = useState(true);
+    const [active, setActive] = useState(false);
     const [open, setOpen] = useState(false);
 
     const isActive = () => { 
@@ -69,6 +67,9 @@ const Navbar = () => {
                     <hr />
                     <div className="menu">
                         <Link className="link" to={"/"}>
+                            SERVICIOS ELÉCTRICOS
+                        </Link>
+                        <Link className="link" to={"/"}>
                             PLOMERÍA
                         </Link>
                         <Link className="link" to={"/"}>
@@ -78,10 +79,13 @@ const Navbar = () => {
                             JARDINERÍA
                         </Link>
                         <Link className="link" to={"/"}>
-                            ELÉCTRICOS
+                            LIMPÍEZA
                         </Link>
                         <Link className="link" to={"/"}>
-                            LIMPIEZA
+                            PINTURA DOMÉSTICA
+                        </Link>
+                        <Link className="link" to={"/"}>
+                            MECÁNICOS
                         </Link>
                         <Link className="link" to={"/"}>
                             MASCOTAS

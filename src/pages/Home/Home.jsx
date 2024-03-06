@@ -1,8 +1,11 @@
 import "./Home.scss";
+import Featured from "../../components/Featured/Featured";
 
 const Home = () => {
     return (
-        <div className="home">Home</div>
+        <section className="home">
+            <Featured />
+        </section>
     )
 }
 
