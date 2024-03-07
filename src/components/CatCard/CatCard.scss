@@ -1,0 +1,36 @@
+.CardLink {
+    display: block;
+    width: 15.75rem;
+    height: 21.5rem;
+}
+
+.catCard {
+    width: 15.75rem;
+    height: 21.5rem;
+    color: var(--light-blue);
+    cursor: pointer;
+    position: relative;
+    
+    img {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        position: absolute;
+        top: 0.938rem;
+        left: 0.938rem;
+    }
+
+    .desc {
+        font-weight: 300;
+        position: absolute;
+        top: 2.5rem;
+        left: 0.938rem;
+    }
+}
