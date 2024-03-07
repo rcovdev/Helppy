@@ -7,7 +7,7 @@ const Featured = () => {
         <section className="featured">
             <div className="container">
                 <div className="hero">
-                    <h1>ENCUENTRA LOS MEJORES Y MÁS SEGUROS SERVICIOS PARA CUALQUIER OCASIÓN.</h1>
+                    <h1>ENCUENTRA LOS <b style={{ color: "var(--sky-blue)" }}>MEJORES Y MÁS SEGUROS SERVICIOS</b>  PARA CUALQUIER OCASIÓN.</h1>
                     <div className="search">
                         <div className="searchInput">
                             <FaSearch style={{ color: "var(--blue)", fontSize: "1.2rem", marginLeft: "1rem"}} />
