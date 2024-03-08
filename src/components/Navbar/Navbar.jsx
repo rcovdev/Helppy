@@ -1,9 +1,11 @@
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
     const [active, setActive] = useState(false);
+    const [display, setDisplay] = useState(false);
     const [open, setOpen] = useState(false);
 
     const isActive = () => { 
@@ -15,6 +17,18 @@ const Navbar = () => {
 
         return () => {
             window.removeEventListener("scroll", isActive);
+        }
+    }, []);
+
+    const displaySearch = () => {
+        window.scrollY > 220 ? setDisplay(true) : setDisplay(false);
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", displaySearch);
+
+        return () => {
+            window.removeEventListener("scroll", displaySearch)
         }
     }, []);
 
@@ -34,6 +48,16 @@ const Navbar = () => {
                         <span className="dot">.</span>
                     </Link>
                 </div>
+                {display && (
+                    <div className="search">
+                    <div className="searchInput">
+                        <FaSearch style={{ color: "var(--blue)", fontSize: "1.2rem", marginLeft: "1rem"}} />
+                        <input type="text" placeholder="Servicio..." />
+                    </div>
+                    <div className="buttonContainer">
+                        <button>Buscar</button>
+                    </div>
+                </div>)}
                 <nav className="links">
                     <span>Explorar</span>
                     <span>Español</span>
@@ -62,10 +86,10 @@ const Navbar = () => {
                     )}
                 </nav>
             </div>
-            {active && (
+            {display && (
                 <>
                     <hr />
-                    <div className="menu">
+                    <div className={display ? "menu" : "menu show"}>
                         <Link className="link" to={"/"}>
                             SERVICIOS ELÉCTRICOS
                         </Link>
@@ -79,10 +103,10 @@ const Navbar = () => {
                             JARDINERÍA
                         </Link>
                         <Link className="link" to={"/"}>
-                            LIMPÍEZA
+                            LIMPIEZA
                         </Link>
                         <Link className="link" to={"/"}>
-                            PINTURA DOMÉSTICA
+                            PINTORES
                         </Link>
                         <Link className="link" to={"/"}>
                             MECÁNICOS

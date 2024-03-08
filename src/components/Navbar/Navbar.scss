@@ -19,7 +19,7 @@
         display: flex;
         justify-content: space-between;
         padding: 1.25rem 0rem;
-
+        
         .logo {
             font-size: 2.125rem;
             font-weight: bold;
@@ -31,6 +31,57 @@
             .dot {
                 font-family: var(--alt-font);
                 color: var(--sky-blue);
+            }
+        }
+
+        .search {
+            display: flex;
+            height: 2.9rem;
+            width: 65%;
+            
+            .searchInput {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                border-radius: 2rem 0 0 2rem;
+                border-top: 2px solid var(--blue);
+                border-left: 2px solid var(--blue);
+                border-bottom: 2px solid var(--blue);
+                
+                input {
+                    height: 100%;
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    padding: 0px 0.7rem;
+                    width: 100%;
+                    font-weight: bold;
+                    color: var(--blue);
+
+                    &::placeholder {
+                        color: var(--gray);
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+            .buttonContainer {
+                height: 100%;
+                
+                display: flex;
+                border-radius: 0 2rem 2rem 0;
+
+                button {
+                    width: 100%;
+                    background-color: var(--blue);
+                    border: none;
+                    padding: 0px 20px;
+                    color: var(--light-blue);
+                    border-radius: 0 2rem 2rem 0;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
             }
         }
 
