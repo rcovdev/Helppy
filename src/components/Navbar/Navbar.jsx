@@ -1,7 +1,8 @@
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import Search from "../Search/Search";
+import Menu from "../Menu/Menu";
 
 const Navbar = () => {
     const [active, setActive] = useState(false);
@@ -48,16 +49,7 @@ const Navbar = () => {
                         <span className="dot">.</span>
                     </Link>
                 </div>
-                {display && (
-                    <div className="search">
-                    <div className="searchInput">
-                        <FaSearch style={{ color: "var(--blue)", fontSize: "1.2rem", marginLeft: "1rem"}} />
-                        <input type="text" placeholder="Servicio..." />
-                    </div>
-                    <div className="buttonContainer">
-                        <button>Buscar</button>
-                    </div>
-                </div>)}
+                <Search className={display ? "search show" : "search"} /> 
                 <nav className="links">
                     <span>Explorar</span>
                     <span>Español</span>
@@ -86,37 +78,9 @@ const Navbar = () => {
                     )}
                 </nav>
             </div>
-            {display && (
-                <>
-                    <hr />
-                    <div className={display ? "menu" : "menu show"}>
-                        <Link className="link" to={"/"}>
-                            SERVICIOS ELÉCTRICOS
-                        </Link>
-                        <Link className="link" to={"/"}>
-                            PLOMERÍA
-                        </Link>
-                        <Link className="link" to={"/"}>
-                            CARPINTERÍA
-                        </Link>
-                        <Link className="link" to={"/"}>
-                            JARDINERÍA
-                        </Link>
-                        <Link className="link" to={"/"}>
-                            LIMPIEZA
-                        </Link>
-                        <Link className="link" to={"/"}>
-                            PINTORES
-                        </Link>
-                        <Link className="link" to={"/"}>
-                            MECÁNICOS
-                        </Link>
-                        <Link className="link" to={"/"}>
-                            MASCOTAS
-                        </Link>
-                    </div>
-                </>
-            )}
+            <div className="menuWrapper">
+                hello
+            </div>
         </header>
     )
 }
