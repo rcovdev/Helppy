@@ -1,7 +1,7 @@
 import "./Home.scss";
-import Featured from "../../components/Featured/Featured";
-import Slide from "../../components/Slide/Slide";
-import CatCard from "../../components/CatCard/CatCard";
+import Featured from "../../components/Home/Featured/Featured";
+import Slide from "../../components/Home/Slide/Slide";
+import CatCard from "../../components/Home/CatCard/CatCard";
 import { cards } from "../../data";
 
 const Home = () => {

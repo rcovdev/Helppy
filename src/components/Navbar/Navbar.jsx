@@ -1,8 +1,8 @@
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Search from "../Search/Search";
-import Menu from "../Menu/Menu";
+import Search from "./Search/Search";
+import Menu from "./Menu/Menu";
 
 const Navbar = () => {
     const [active, setActive] = useState(false);

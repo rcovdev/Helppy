@@ -1,6 +1,6 @@
 import "./Featured.scss";
 import { FaSearch } from "react-icons/fa";
-import featured from "../../../public/featured.png";
+import featured from "../../../../public/featured.png";
 
 const Featured = () => {
     return (
