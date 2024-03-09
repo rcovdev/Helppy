@@ -22,7 +22,7 @@ const Navbar = () => {
     }, []);
 
     const displaySearch = () => {
-        window.scrollY > 220 ? setDisplay(true) : setDisplay(false);
+        window.scrollY > 350 ? setDisplay(true) : setDisplay(false);
     }
 
     useEffect(() => {
@@ -78,8 +78,10 @@ const Navbar = () => {
                     )}
                 </nav>
             </div>
-            <div className="menuWrapper">
-                hello
+            <div className={display ? "menuContainer show" : "menuContainer"}>
+                {display && (
+                    <Menu />
+                )}
             </div>
         </header>
     )
