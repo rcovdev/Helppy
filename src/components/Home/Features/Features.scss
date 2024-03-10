@@ -1,0 +1,23 @@
+.features {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+    padding: 5rem 0;
+    color: var(--light-blue);
+    .container {
+        display: flex;
+        width: 87.5rem;
+        gap: 10rem;
+
+        .textContainer { 
+            
+        }
+
+        img {
+            width: 40rem;
+            height: 25rem;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+    }
+}
