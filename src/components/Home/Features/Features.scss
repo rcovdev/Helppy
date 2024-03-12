@@ -4,15 +4,44 @@
     background-color: var(--blue);
     padding: 5rem 0;
     color: var(--light-blue);
+
     .container {
         display: flex;
         width: 87.5rem;
-        gap: 10rem;
+        gap: 9rem;
 
         .textContainer { 
-            
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+                font-family: var(--alt-font);
+                letter-spacing: 0.05rem;
+
+                .icon {
+                    font-size: 1.5rem;
+                }
+            }
+
+            p {
+                margin: 1rem 0;
+                width: 30rem;
+                font-family: var(--alt-font);
+            }
         }
 
+        .imgContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         img {
             width: 40rem;
             height: 25rem;
