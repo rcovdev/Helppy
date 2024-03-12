@@ -1,5 +1,6 @@
+// IMPORT REACT ROUTER DOM ELEMENTS
 import { Routes, Route, useLocation } from "react-router-dom";
-
+// IMPORT COMPONENTS
 import Home from "../../pages/Home/Home";
 import Gigs from "../../pages/Gigs/Gigs";
 import Gig from "../../pages/Gig/Gig";

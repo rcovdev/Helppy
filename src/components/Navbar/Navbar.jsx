@@ -42,45 +42,55 @@ const Navbar = () => {
 
     return (
         <>
+        {/* NAVBAR */}
         <header className={active ? "navbar active" : "navbar"}>
             <div className="container">
-                <div className="logo">
+                {/* LOGO */}
+                <a className="logo">
                     <Link to={"/"} className="link">
                         <span className="text">helppy</span>
                         <span className="dot">.</span>
                     </Link>
+                </a>
+                {/* SEARCH BAR */}
+                <div className="search-container">
+                    <Search className={display ? "search show" : "search"} />
                 </div>
-                <Search className={display ? "search show" : "search"} /> 
-                <div className="links">
+                {/* LINKS */}
+                <nav className="links">
+                    <span>Helppy Business</span>
                     <span>Explore</span>
                     <span>English</span>
                     {!currentUser?.isHelpper && <Link to={"/register"} className="link">Become a Helpper</Link>}
                     {!currentUser && <Link to={"/login"} className="link">Sign In</Link>}
                     {!currentUser && <button className={active && "active"}>Sign Up</button>}
+                    {/* USER MENU IF USER=TRUE */}
                     {currentUser && (
                         <div className="user" onClick={() => setOpen(!open)}>
                             <img src={currentUser.img} alt="" />
                             <span>{currentUser?.username}</span>
                             {open && (
-                                <div className="options">
+                                // USER MENU OPTIONS
+                                <ul className="options">
                                     {
                                         currentUser?.isHelpper && (
                                             <>
-                                                <Link to={"/events"} className="link">Events</Link>
-                                                <Link to={"/new-event"} className="link">New Event</Link>
+                                                <li><Link to={"/events"} className="link">Events</Link></li>
+                                                <li><Link to={"/new-event"} className="link">New Event</Link></li>
                                             </>
                                     )}
-                                    <Link to={"/orders"} className="link">Active Events</Link>
-                                    <Link to={"/messages"} className="link">Messages</Link>
-                                    <span>Log Out</span>
-                                </div>
+                                    <li><Link to={"/orders"} className="link">Active Events</Link></li>
+                                    <li><Link to={"/messages"} className="link">Messages</Link></li>
+                                    <li><span>Log Out</span></li>
+                                </ul>
                             )}
                         </div>
                     )}
-                </div>
+                </nav>
             </div>
         </header>
-        <nav className={display ? "options show" : "options"}>
+        {/* ANIMATED LINKS */}
+        <nav className={display ? "services show" : "services"}>
             <Menu className="menu" />
         </nav>
         </>

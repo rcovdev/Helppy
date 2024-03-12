@@ -5,6 +5,7 @@ const Slide = ({children, slidesToShow, centerMode}) => {
     return (
         <section className="slide">
             <div className="container">
+                {/* SLIDER */}
                 <Slider slidesToShow={slidesToShow} centerMode={centerMode}>
                     {children}
                 </Slider>

@@ -10,13 +10,13 @@
         width: 87.5rem;
         gap: 9rem;
 
-        .textContainer { 
+        .text-container { 
             h2 {
                 font-size: 2rem;
                 margin-bottom: 2rem;
             }
 
-            .item {
+            .title {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
@@ -34,6 +34,8 @@
                 margin: 1rem 0;
                 width: 30rem;
                 font-family: var(--alt-font);
+                font-weight: 300;
+                font-size: 1.099rem;
             }
         }
 
@@ -42,6 +44,7 @@
             align-items: center;
             justify-content: center;
         }
+
         img {
             width: 40rem;
             height: 25rem;
