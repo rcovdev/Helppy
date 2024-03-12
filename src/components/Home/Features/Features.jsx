@@ -7,6 +7,8 @@ const Features = () => {
             <div className="container">
                 <div className="textContainer">
                     <h2>UNA CANTIDAD DE SERVICIOS INCOMPARABLE EN LA PALMA DE TU MANO.</h2>
+                    <div className="checkbox"></div>
+                    
                 </div>
                 <div className="imgContainer">
                     <img src={features} alt="" />

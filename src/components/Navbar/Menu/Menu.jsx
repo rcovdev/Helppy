@@ -1,33 +1,33 @@
 import { Link } from "react-router-dom";
 
-const Menu = () => {
+const Menu = ({className}) => {
     return (
         <>
             <hr />
-            <div className="menu">
+            <div className={className}>
                 <Link className="link" to={"/"}>
-                    SERVICIOS ELÉCTRICOS
+                    ELECTRIC SERVICES
                 </Link>
                 <Link className="link" to={"/"}>
-                    PLOMERÍA
+                    PLUMBING
                 </Link>
                 <Link className="link" to={"/"}>
-                    CARPINTERÍA
+                    CARPENTRY
+                </Link>
+                <Link className="link" to={"/"}> 
+                    GARDENING
                 </Link>
                 <Link className="link" to={"/"}>
-                    JARDINERÍA
+                    CLEANING
                 </Link>
                 <Link className="link" to={"/"}>
-                    LIMPIEZA
+                    PAINTERS
                 </Link>
                 <Link className="link" to={"/"}>
-                    PINTORES
+                    MECHANICAL SERVICES
                 </Link>
                 <Link className="link" to={"/"}>
-                    MECÁNICOS
-                </Link>
-                <Link className="link" to={"/"}>
-                    MASCOTAS
+                    PETS
                 </Link>
             </div>
         </>

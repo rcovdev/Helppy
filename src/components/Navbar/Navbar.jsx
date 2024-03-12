@@ -22,7 +22,7 @@ const Navbar = () => {
     }, []);
 
     const displaySearch = () => {
-        window.scrollY > 350 ? setDisplay(true) : setDisplay(false);
+        window.scrollY > 280 ? setDisplay(true) : setDisplay(false);
     }
 
     useEffect(() => {
@@ -41,6 +41,7 @@ const Navbar = () => {
     };
 
     return (
+        <>
         <header className={active ? "navbar active" : "navbar"}>
             <div className="container">
                 <div className="logo">
@@ -50,12 +51,12 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <Search className={display ? "search show" : "search"} /> 
-                <nav className="links">
-                    <span>Explorar</span>
-                    <span>Español</span>
-                    {!currentUser?.isHelpper && <Link to={"/register"} className="link">Conviertete Helpper</Link>}
-                    {!currentUser && <Link to={"/login"} className="link">Iniciar Sesión</Link>}
-                    {!currentUser && <button className={active && "active"}>Registrate</button>}
+                <div className="links">
+                    <span>Explore</span>
+                    <span>English</span>
+                    {!currentUser?.isHelpper && <Link to={"/register"} className="link">Become a Helpper</Link>}
+                    {!currentUser && <Link to={"/login"} className="link">Sign In</Link>}
+                    {!currentUser && <button className={active && "active"}>Sign Up</button>}
                     {currentUser && (
                         <div className="user" onClick={() => setOpen(!open)}>
                             <img src={currentUser.img} alt="" />
@@ -65,25 +66,24 @@ const Navbar = () => {
                                     {
                                         currentUser?.isHelpper && (
                                             <>
-                                                <Link to={"/events"} className="link">Eventos</Link>
-                                                <Link to={"/new-event"} className="link">Nuevo Evento</Link>
+                                                <Link to={"/events"} className="link">Events</Link>
+                                                <Link to={"/new-event"} className="link">New Event</Link>
                                             </>
                                     )}
-                                    <Link to={"/orders"} className="link">Eventos Activos</Link>
-                                    <Link to={"/messages"} className="link">Mensajes</Link>
-                                    <span>Cerrar Sesión</span>
+                                    <Link to={"/orders"} className="link">Active Events</Link>
+                                    <Link to={"/messages"} className="link">Messages</Link>
+                                    <span>Log Out</span>
                                 </div>
                             )}
                         </div>
                     )}
-                </nav>
-            </div>
-            <div className={display ? "menuContainer show" : "menuContainer"}>
-                {display && (
-                    <Menu />
-                )}
+                </div>
             </div>
         </header>
+        <nav className={display ? "options show" : "options"}>
+            <Menu className="menu" />
+        </nav>
+        </>
     )
 }
 

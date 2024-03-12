@@ -7,22 +7,22 @@ const Featured = () => {
         <section className="featured">
             <div className="container">
                 <div className="hero">
-                    <h1>ENCUENTRA LOS <b style={{ color: "var(--sky-blue)" }}>MEJORES Y MÁS SEGUROS SERVICIOS</b>  PARA CUALQUIER OCASIÓN.</h1>
+                    <h1>FIND THE <b style={{ color: "var(--sky-blue)" }}>BEST & SAFEST SERVICES</b> FOR <b style={{ color: "var(--sky-blue)" }}>ANY OCCASION</b> IN <b style={{ color: "var(--sky-blue)" }}>ANY LOCATION.</b></h1>
                     <div className="search">
                         <div className="searchInput">
                             <FaSearch style={{ color: "var(--blue)", fontSize: "1.2rem", marginLeft: "1rem"}} />
-                            <input type="text" placeholder="Servicio..." />
+                            <input type="text" placeholder="Service..." />
                         </div>
                         <div className="buttonContainer">
-                            <button>Buscar</button>
+                            <button>Search</button>
                         </div>
                     </div>
                     <div className="popular">
                         <span>Popular: </span>
-                        <button>Jardinero</button>
-                        <button>Electicista</button>
-                        <button>Plomero</button>
-                        <button>Pintor</button>
+                        <button>GARDENER</button>
+                        <button>ELECTRICIAN</button>
+                        <button>PLUMBER</button>
+                        <button>PAINTER</button>
                     </div>
                 </div>
                 <div className="image">
