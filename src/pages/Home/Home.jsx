@@ -7,6 +7,8 @@ import Featured from "../../components/Home/Featured/Featured";
 import Slide from "../../components/Home/Slide/Slide";
 import CatCard from "../../components/Home/CatCard/CatCard";
 import Features from "../../components/Home/Features/Features";
+import Business from "../../components/Home/Business/Business";
+import Services from "../../components/Home/Services/Services";
 
 const Home = () => {
     return (
@@ -21,6 +23,10 @@ const Home = () => {
             </Slide>
             {/* FEATURES COMPONENT */}
             <Features />
+            {/* OUR SERVICES */}
+            <Services />
+            {/* BUSINESS COMPONENT */}
+            <Business />
         </section>
     )
 }

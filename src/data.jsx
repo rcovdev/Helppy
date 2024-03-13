@@ -49,6 +49,58 @@ export const cards = [
     },
 ];
 
+import { FaRegLightbulb } from "react-icons/fa6";
+import { MdPlumbing } from "react-icons/md";
+import { MdOutlineCarpenter } from "react-icons/md";
+import { GiGardeningShears } from "react-icons/gi";
+import { GiVacuumCleaner } from "react-icons/gi";
+import { AiOutlineFormatPainter } from "react-icons/ai";
+import { FaCar } from "react-icons/fa";
+import { MdPets } from "react-icons/md";
+
+export const services = [
+    {
+        id: 1,
+        icon: <FaRegLightbulb />,
+        title: "ELECTRIC SERVICES"
+    },
+    {
+        id: 2,
+        icon: <MdPlumbing />,
+        title: "PLUMBING"
+    },
+    {
+        id: 3,
+        icon: <MdOutlineCarpenter />,
+        title: "CARPENTRY"
+    },
+    {
+        id: 4,
+        icon: <GiGardeningShears />,
+        title: "GARDENING"
+    },
+    {
+        id: 5,
+        icon: <GiVacuumCleaner />,
+        title: "CLEANING"
+    },
+    {
+        id: 6,
+        icon: <AiOutlineFormatPainter />,
+        title: "PAINTERS"
+    },
+    {
+        id: 7,
+        icon: <FaCar />,
+        title: "MECHANICAL SERVICES"
+    },
+    {
+        id: 8,
+        icon: <MdPets />,
+        title: "PETS"
+    },
+]
+
 export const projects = [
     {
         id: 1,

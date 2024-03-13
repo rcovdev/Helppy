@@ -46,12 +46,12 @@ const Navbar = () => {
         <header className={active ? "navbar active" : "navbar"}>
             <div className="container">
                 {/* LOGO */}
-                <a className="logo">
+                <div className="logo">
                     <Link to={"/"} className="link">
                         <span className="text">helppy</span>
                         <span className="dot">.</span>
                     </Link>
-                </a>
+                </div>
                 {/* SEARCH BAR */}
                 <div className="search-container">
                     <Search className={display ? "search show" : "search"} />

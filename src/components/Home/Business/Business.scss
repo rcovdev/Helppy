@@ -1,0 +1,88 @@
+.business {
+    display: flex;
+    justify-content: center;
+    color: var(--light-blue);
+    background-color: var(--light-blue);
+
+    .container { 
+        background-color: var(--blue);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0;
+        border-radius: 2rem 2rem 0.5rem 0.5rem;
+
+        .wrapper {
+            display: flex;
+            width: 87.5rem;
+            gap: 9rem;
+            
+            .img-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                flex: 1;
+                
+                img {
+                    max-height: 23rem;
+                    object-fit: cover;
+                }
+            }
+            
+            .text-container {
+                flex: 1;
+                
+                .text {
+                    font-size: 2.125rem;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+                
+                .dot {
+                    font-size: 2.125rem;
+                    font-weight: bold;
+                    font-family: var(--alt-font);
+                    color: var(--sky-blue);
+                }
+                
+                .extra {
+                    font-family: var(--alt-font);
+                    color: var(--light-blue);
+                    margin-left: 0.50rem;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+            
+                h3 {
+                    font-size: 2rem;
+                    margin: 2rem 0rem;
+                    width: 75%;
+                }
+            
+                .title {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    font-family: var(--alt-font);
+                    letter-spacing: 0.05rem;
+                    
+                    .icon {
+                        font-size: 1.5rem;
+                    }
+                }
+            
+                p {
+                    margin: 1rem 0;
+                    width: 30rem;
+                    font-family: var(--alt-font);
+                    font-weight: 300;
+                    font-size: 1.099rem;
+                }
+            }
+        }
+    }
+}
