@@ -139,6 +139,7 @@
                     color: var(--blue);
                     font-weight: 500;
                     list-style: none;
+                    z-index: 999;
 
                     li {
                         width: fit-content;
@@ -202,7 +203,7 @@
     &.show {
         rotate: x 0deg;
         opacity: 1;
-        z-index: 999;
+        z-index: 998;
         background-color: var(--light-blue);
     }
 
