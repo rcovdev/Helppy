@@ -10,12 +10,10 @@ const Slide = ({children, slidesToShow, centerMode}) => {
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 1,
         initalSlide: 0,
         centerMode: true,
         draggable: false,
         lazyLoad: true,
-        centerPadding: "60px",
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: []
