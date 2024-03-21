@@ -9,6 +9,7 @@ import CatCard from "../../components/Home/CatCard/CatCard";
 import Features from "../../components/Home/Features/Features";
 import Business from "../../components/Home/Business/Business";
 import Services from "../../components/Home/Services/Services";
+import Slider from "../../components/Home/Slider/Slider";
 
 const Home = () => {
     return (
@@ -27,6 +28,8 @@ const Home = () => {
             <Services />
             {/* BUSINESS COMPONENT */}
             <Business />
+            {/* SLIDER */}
+            <Slider />
         </section>
     )
 }
