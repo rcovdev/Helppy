@@ -1,0 +1,78 @@
+.slide-show {
+    display: flex;
+    justify-content: center;
+    padding: 6.25rem 0;
+    background-color: var(--light-blue);
+    
+    .container {
+        width: 87.5rem;
+        display: flex;
+        justify-content: center;
+
+        .wrapper {
+            height: 21.563rem;
+            width: 100%;
+
+            .slick-list {
+                margin-right: -1.8rem;
+                height: 21.563rem !important;
+            }
+
+            .slick-slide,
+            .slick-active,
+            .slick-current {
+                width: 17.85-rem !important;
+
+            }
+            
+            .slick-prev,
+            .slick-next {
+                width: 3.185rem;
+                height: 3.185rem;
+                background-color: var(--light-gray);
+                z-index: 997;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .slick-prev {
+                left: -1.5rem;
+            }
+
+            .slick-next {
+                right: -1.5rem;
+            }
+
+            .slick-prev::before,
+            .slick-next::before {
+                content: "";
+            }
+
+            .slick-prev::after {
+                content: "";
+                display: block;
+                background-image: url("../../../../public/LeftArrow.svg");
+                background-size: contain;
+                width: 2.3rem;
+                height: 2.3rem;
+                position: absolute;
+                top: 0.5rem;
+                left: 0.3rem;
+            }
+
+            .slick-next::after {
+                content: "";
+                display: block;
+                background-image: url("../../../../public/RightArrow.svg");
+                background-size: contain;
+                width: 2.3rem;
+                height: 2.3rem;
+                position: absolute;
+                top: 0.5rem;
+                right: 0.3rem;
+            }
+        }
+    }
+}

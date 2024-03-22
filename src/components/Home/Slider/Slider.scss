@@ -1,0 +1,50 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    padding: 6.25rem 0;
+    background-color: var(--light-blue);
+    
+    .container {
+        width: 87.5rem;
+        overflow: hidden;
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .slider-prev,
+            .slider-next {
+                background-color: var(--light-gray);
+                height: 3.135rem;
+                width: 3.135rem;
+                border-radius: 50%;
+                z-index: 999;
+                border: none;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+                img {
+                    width: 2rem;
+                }
+            }
+
+            .slider-prev {
+                position: absolute;
+                left: 0.5rem;
+            }
+
+            .slider-next {
+                position: absolute;
+                right: 0.5rem;
+            }
+
+            .slider-track {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+}
