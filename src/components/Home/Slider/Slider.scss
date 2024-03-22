@@ -1,0 +1,67 @@
+.slider {
+    background-color: var(--light-blue);
+    padding: 5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    .container {
+        width: 87.5rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .prev-button,
+        .next-button {
+            background-color: var(--light-gray);
+            border-radius: 50%;
+            height: 3.180rem;
+            width: 3.180rem;
+            border: none;
+            cursor: pointer;
+            z-index: 997;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 2.3rem;
+                height: 2.3rem;
+            }
+        }
+
+        .prev-button {
+            left: -1.5rem;
+        }
+
+        .next-button {
+            right: -1.5rem;
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            .slider-track {
+                display: flex;
+                gap: 1rem;
+                transform: translateX(0px);
+                transition: transform 0.5s ease-in-out;
+
+                .card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 5rem;
+                    width: calc((87.5rem - 4rem) / 5);
+                    height: 21rem;
+                    background-color: crimson;
+                    border-radius: 0.6rem;
+                }
+            }
+        }
+    }
+}
