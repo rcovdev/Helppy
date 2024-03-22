@@ -1,0 +1,11 @@
+.slider{
+    display: flex;
+    justify-content: center;
+    padding: 6.25rem 0;
+    background-color: var(--light-blue);
+    overflow: hidden;
+
+    .container {
+        width: 87.5rem;
+    }
+}
