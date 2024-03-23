@@ -9,19 +9,41 @@ const Slider = () => {
     const SLIDER_REF = useRef();
 
     const nextSlide = () => {
-        if (currentSlide < 3) {
+        if (currentSlide < 4) {
             setCurrentSlide(currentSlide + 1);
+        }
+
+        if (currentSlide > 0) {
+            SLIDER_REF.current.style.transform = "translateX(-88.5rem)";
+        }
+
+        if (currentSlide > 1) {
+            SLIDER_REF.current.style.transform = "translateX(-106.2rem)";
+        }
+
+        if (currentSlide > 2) {
+            SLIDER_REF.current.style.transform = "translateX(0px)";
+        }
+        
+        if (currentSlide > 2) {
+            setCurrentSlide(1);
         }
     }
         
-        const prevSlide = () => {
-            if (currentSlide > 1) {
-                setCurrentSlide(currentSlide - 1);
-            }
+    const prevSlide = () => {
+        if (currentSlide > 1) {
+            setCurrentSlide(currentSlide - 1);
         }
 
-        console.log(currentSlide)
-        
+        if (currentSlide > 1) {
+            SLIDER_REF.current.style.transform = "translateX(0)";
+        }
+
+        if (currentSlide > 2) {
+            SLIDER_REF.current.style.transform = "translateX(-88.5rem)";
+        }
+    }
+
     return (
         <section className="slider">
             <div className="container">
