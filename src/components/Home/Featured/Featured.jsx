@@ -3,7 +3,7 @@ import "./Featured.scss";
 // IMPORT ICON
 import { FaSearch } from "react-icons/fa";
 // IMPORT IMAGE
-import featured from "../../../../public/featured.png";
+import featured from "../../../../public/images/featured.png";
 
 const Featured = () => {
     return (

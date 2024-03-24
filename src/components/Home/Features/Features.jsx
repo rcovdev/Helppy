@@ -1,5 +1,5 @@
 import "./Features.scss";
-import features from "../../../../public/features.jpg"
+import features from "../../../../public/images/features.jpg"
 import { FaRegCheckCircle } from "react-icons/fa";
 
 const Features = () => {

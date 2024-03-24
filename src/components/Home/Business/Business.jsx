@@ -1,7 +1,7 @@
 import "./Business.scss";
-import business1 from "../../../../public/business1.png";
-import business2 from "../../../../public/business2.png";
-import business3 from "../../../../public/business3.png";
+import business1 from "../../../../public/images/business1.png";
+import business2 from "../../../../public/images/business2.png";
+import business3 from "../../../../public/images/business3.png";
 import { FaRegCheckCircle } from "react-icons/fa";
 
 const Business = () => {

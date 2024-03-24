@@ -7,6 +7,7 @@ import Features from "../../components/Home/Features/Features";
 import Services from "../../components/Home/Services/Services";
 import Business from "../../components/Home/Business/Business";
 
+// HOME COMPONENT
 const Home = () => {
     return (
         <section className="home">

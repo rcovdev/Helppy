@@ -1,11 +1,11 @@
 import "./Slider.scss";
-import LeftArrow from "../../../../public/LeftArrow.svg";
-import RightArrow from "../../../../public/RightArrow.svg";
+import LeftArrow from "../../../../public/assets/LeftArrow.svg";
+import RightArrow from "../../../../public/assets/RightArrow.svg";
 import { useRef } from "react";
 import { useState } from "react";
 import { cards } from "../../../data";
 
-const Slider = () => {
+const Slider = ({children}) => {
     const [currentSlide, setCurrentSlide] = useState(1);
     const SLIDER_REF = useRef();
 
@@ -51,12 +51,7 @@ const Slider = () => {
                     <button className="prev-button" onClick={prevSlide}><img src={LeftArrow} alt="previous-slide-button" /></button>
                 <div className="wrapper">
                     <div className="slider-track" ref={SLIDER_REF}>
-                        {cards.map(card => (
-                            <div className="slider-item" key={card.id} style={{ backgroundImage: `url(${card.img})`}}>
-                                <h3>{card.title}</h3>
-                                <span>{card.desc}</span>
-                            </div>
-                        ))}
+                        {children}
                     </div>
                     <button className="next-button" onClick={nextSlide}><img src={RightArrow} alt="next-slide-button" /></button>
                 </div>
