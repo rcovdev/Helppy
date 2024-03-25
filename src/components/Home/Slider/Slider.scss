@@ -50,37 +50,6 @@
                 gap: 1rem;
                 transform: translateX(0px);
                 transition: transform 1s ease-out;
-
-                .slider-item {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 5rem;
-                    width: calc((87.5rem - 4rem) / 5);
-                    height: 18.899rem;
-                    position: relative;
-                    border-radius: 0.6rem;
-                    background-position: center;
-                    background-size: cover;
-                    
-                    h3 {
-                        font-size: 1.5rem;
-                        position: absolute;
-                        top: 1rem;
-                        left: 1rem;
-                        color: rgb(255, 255, 255);
-                    }
-
-                    span {
-                        font-size: 1rem;
-                        position: absolute;
-                        top: 3rem;
-                        left: 1rem;
-                        margin-right: 2rem;
-                        color: white;
-                        font-weight: bold;
-                    }
-                }
             }
         }
     }

@@ -1,19 +1,25 @@
+// IMPORT STYLES
 import "./Business.scss";
+// IMPORT IMAGES
 import business1 from "../../../../public/images/business1.png";
 import business2 from "../../../../public/images/business2.png";
 import business3 from "../../../../public/images/business3.png";
+// IMPORT ICON
 import { FaRegCheckCircle } from "react-icons/fa";
 
+// BUSINESS COMPONENT
 const Business = () => {
     return (
         <div className="business">
             <div className="container">
                 <div className="wrapper">
+                    {/* IMG CONTAINER */}
                     <div className="img-container">
                         <img className="business1" style={{ marginTop: "4rem" }} src={business1} alt="business1_img" />
                         <img className="business2" style={{ marginBottom: "5rem" }} src={business2} alt="business2_img" />
                         <img className="business3" src={business3} alt="business3_img" />
                     </div>
+                    {/* CONTENT CONTAINER */}
                     <div className="text-container">
                         <span className="text">helppy</span>
                         <span className="dot">.</span>

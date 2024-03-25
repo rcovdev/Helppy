@@ -5,12 +5,13 @@ import { FaSearch } from "react-icons/fa";
 // IMPORT IMAGE
 import featured from "../../../../public/images/featured.png";
 
+// FEATURED COMPONENT
 const Featured = () => {
     return (
         <section className="featured">
             <div className="container">
                 <div className="hero">
-                    {/* MAIN TEXT */}
+                    {/* SLOGAN */}
                     <h1>FIND THE <b style={{ color: "var(--sky-blue)" }}>BEST & SAFEST SERVICES</b> FOR <b style={{ color: "var(--sky-blue)" }}>ANY OCCASION</b> IN <b style={{ color: "var(--sky-blue)" }}>ANY LOCATION.</b></h1>
                     <div className="search">
                         {/* SEARCH BAR */}

@@ -1,12 +1,17 @@
+// IMPORT STYLES
 import "./Features.scss";
-import features from "../../../../public/images/features.jpg"
+// IMPORT IMG
+import features from "../../../../public/images/features.jpg";
+// IMPORT ICON
 import { FaRegCheckCircle } from "react-icons/fa";
 
+// FEATURES COMPONENT
 const Features = () => {
     return (
         <section className="features">
             <div className="container">
                 <div className="wrapper">
+                    {/* MAIN CONTENT */}
                     <div className="text-container">
                         <h2>AN INCOMPARABLE AMOUNT OF SERVICES IN THE PALM OF YOUR HAND.</h2>
                         <div className="title">
@@ -39,6 +44,7 @@ const Features = () => {
                         </p>
                         
                     </div>
+                    {/* IMG CONTAINER */}
                     <div className="img-container">
                         <img src={features} alt="features_img" />
                     </div>

@@ -1,9 +1,7 @@
 import "./Slider.scss";
 import LeftArrow from "../../../../public/assets/LeftArrow.svg";
 import RightArrow from "../../../../public/assets/RightArrow.svg";
-import { useRef } from "react";
-import { useState } from "react";
-import { cards } from "../../../data";
+import { useRef, useState } from "react";
 
 const Slider = ({children}) => {
     const [currentSlide, setCurrentSlide] = useState(1);
