@@ -1,21 +1,16 @@
-// IMPORT STYLES
 import "./Navbar.scss";
-// IMPORT LINK
+
 import { Link } from "react-router-dom";
-// IMPORT HOOKS
 import { useEffect, useState } from "react";
-// IMPORT COMPONENTS
+
 import Search from "./Search/Search";
 import Menu from "./Menu/Menu";
 
-// NAVBAR COMPONENT
 const Navbar = () => {
-    // STATE HOOKS
     const [active, setActive] = useState(false);
     const [display, setDisplay] = useState(false);
     const [open, setOpen] = useState(false);
 
-    // CHANGE NAVABR CALSSNAME ON SCROLL
     const isActive = () => { 
         window.scrollY > 0 ? setActive(true) : setActive(false);
     }
@@ -28,7 +23,6 @@ const Navbar = () => {
         }
     }, []);
 
-    // CHANGE SEARCH BAR AND MENU CLASSNAME AT 280px
     const displaySearch = () => {
         window.scrollY > 280 ? setDisplay(true) : setDisplay(false);
     }
@@ -41,7 +35,6 @@ const Navbar = () => {
         }
     }, []);
 
-    // DUMMY USER
     const currentUser = {
         id: 1,
         img: "https://lh3.googleusercontent.com/ogw/AF2bZyjT8zY3J2l5iRpSneFDfRVp66XjjwRS5_LRIXBr=s32-c-mo",
@@ -49,24 +42,19 @@ const Navbar = () => {
         isHelpper: true
     };
 
-    // NAVBAR COMPONENT
     return (
         <>
-            {/* NAVBAR */}
             <header className={active ? "navbar active" : "navbar"}>
                 <div className="container">
-                    {/* LOGO */}
                     <div className="logo">
                         <Link to={"/"} className="link">
                             <span className="text">helppy</span>
                             <span className="dot">.</span>
                         </Link>
                     </div>
-                    {/* SEARCH BAR */}
                     <div className="search-container">
                         <Search className={display ? "search show" : "search"} />
                     </div>
-                    {/* LINKS */}
                     <nav className="links">
                         <span>Helppy Business</span>
                         <span>Explore</span>
@@ -74,20 +62,17 @@ const Navbar = () => {
                         {!currentUser?.isHelpper && <Link to={"/register"} className="link">Become a Helpper</Link>}
                         {!currentUser && <Link to={"/login"} className="link">Sign In</Link>}
                         {!currentUser && <button className={active && "active"}>Sign Up</button>}
-                        {/* USER MENU IF USER=TRUE */}
                         {currentUser && (
                             <div className="user" onClick={() => setOpen(!open)}>
                                 <img src={currentUser.img} alt="" />
                                 <span>{currentUser?.username}</span>
                                 {open && (
-                                    // USER MENU OPTIONS
                                     <ul className="options">
-                                        {
-                                            currentUser?.isHelpper && (
-                                                <>
-                                                    <li><Link to={"/events"} className="link">Events</Link></li>
-                                                    <li><Link to={"/new-event"} className="link">New Event</Link></li>
-                                                </>
+                                        {currentUser?.isHelpper && (
+                                            <>
+                                                <li><Link to={"/events"} className="link">Events</Link></li>
+                                                <li><Link to={"/new-event"} className="link">New Event</Link></li>
+                                            </>
                                         )}
                                         <li><Link to={"/orders"} className="link">Active Events</Link></li>
                                         <li><Link to={"/messages"} className="link">Messages</Link></li>
@@ -99,7 +84,6 @@ const Navbar = () => {
                     </nav>
                 </div>
             </header>
-            {/* MENU */}
             <nav className={display ? "services show" : "services"}>
                 <Menu className="menu" />
             </nav>

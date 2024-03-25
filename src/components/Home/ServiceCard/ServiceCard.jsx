@@ -1,11 +1,8 @@
-// IMPORT STYLES
-import { Link } from "react-router-dom";
 import "./ServiceCard.scss";
+import { Link } from "react-router-dom";
 
-// SERVICE CARD COMPONENT
 const ServiceCard = ({item}) => {
     return (
-        // ITEM CONTAINER
         <div className="slider-item">
             <Link className="card-link" to={"/gigs?cat=design"}>
             <img src={item.img} alt="" />

@@ -1,6 +1,5 @@
-// IMPORT REACT ROUTER DOM ELEMENTS
 import { Routes, Route, useLocation } from "react-router-dom";
-// IMPORT COMPONENTS
+
 import Home from "../../pages/Home/Home";
 import Gigs from "../../pages/Gigs/Gigs";
 import Gig from "../../pages/Gig/Gig";
@@ -17,7 +16,7 @@ const AppRouter = () => {
 
     return (
         <Routes key={location.pathname} location={location}>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<Home />} /> 
             <Route exact path="/events" element={<Gigs />} />
             <Route exact path="/event/:id" element={<Gig />} />
             <Route exact path="/my-events" element={<MyGigs />} />
