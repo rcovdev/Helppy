@@ -26,7 +26,7 @@ export const cards = [
     {
         id: 5,
         title: "Garden Design",
-        desc: "Transform your garden into a paradise",
+        desc: "Transform your garden into a paradise.",
         img: "../public/images/garden-desing.jpg",
     },
     {

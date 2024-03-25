@@ -8,8 +8,13 @@ const ServiceCard = ({item}) => {
         // ITEM CONTAINER
         <div className="slider-item">
             <img src={item.img} alt="" />
-            <span className="line"></span>
-            <h3>{item.title}</h3>
+            <div className="title-container">
+                <h3>{item.title}</h3>
+            </div>
+            <div className="desc-container">
+                <div className="line"></div>
+                <span>{item.desc}</span>
+            </div>
         </div>
     )
 }
