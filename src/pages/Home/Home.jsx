@@ -1,5 +1,7 @@
 import "./Home.scss";
+
 import { cards } from "../../data";
+
 import Featured from "../../components/Home/Featured/Featured";
 import Slider from "../../components/Home/Slider/Slider";
 import ServiceCard from "../../components/Home/ServiceCard/ServiceCard";
