@@ -46,13 +46,13 @@ const Slider = ({children}) => {
     return (
         <section className="slider">
             <div className="container">
-                    <button className="prev-button" onClick={prevSlide}><img src={LeftArrow} alt="previous-slide-button" /></button>
+                <button className="prev-button" onClick={prevSlide}><img src={LeftArrow} alt="previous-slide-button" /></button>
                 <div className="wrapper">
                     <div className="slider-track" ref={SLIDER_REF}>
                         {children}
                     </div>
-                    <button className="next-button" onClick={nextSlide}><img src={RightArrow} alt="next-slide-button" /></button>
                 </div>
+                <button className="next-button" onClick={nextSlide}><img src={RightArrow} alt="next-slide-button" /></button>
             </div>
         </section>
     )
