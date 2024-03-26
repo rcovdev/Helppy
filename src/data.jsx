@@ -119,6 +119,37 @@ export const services = [
     },
 ]
 
+export const reviews = [
+    {
+        id: 1,
+        img: "",
+        name: "Samantha R.",
+        gig: "Deep Cleaning",
+        review: "I recently hired their team for a deep cleaning service, and I must say, I'm thoroughly impressed! Every nook and cranny of my home is sparkling. They tackled areas I wouldn't have even thought to clean. Their attention to detail is unmatched, and their professionalism made the entire experience seamless. Highly recommend!"
+    },
+    {
+        id: 2,
+        img: "",
+        name: "Mike D.",
+        gig: "Pet Grooming",
+        review: "The pet grooming service provided was exceptional! Our golden retriever, Bailey, has never looked better. The groomer was patient, skilled, and clearly passionate about animals. They used high-quality products, and Bailey seemed so relaxed and happy throughout the process. It's clear they not only excel in grooming but also in making pets feel at ease. A top-notch service we'll definitely be using again."
+    },
+    {
+        id: 3,
+        img: "",
+        name: "Linda H.",
+        gig: "Interior Painting",
+        review: "We recently decided to give our living room a makeover and hired their interior painting service. The transformation was stunning! The team was meticulous, ensuring every wall was flawlessly painted and the color recommendations they provided were spot-on. They were organized, clean, and efficient, making the entire process worry-free for us. Our living room has never looked better. A big thumbs up!"
+    },
+    {
+        id: 4,
+        img: "",
+        name: "Jordan K.",
+        gig: "Garden Design",
+        review: "The garden design service exceeded all my expectations! They transformed my bland backyard into a breathtaking oasis. The designer was incredibly knowledgeable and took the time to understand my vision, incorporating it into a design that was both beautiful and practical. The attention to detail, from plant selection to the layout, was impeccable. It's now my favorite spot in the house. Can't thank them enough!"
+    },
+]
+
 export const projects = [
     {
         id: 1,
