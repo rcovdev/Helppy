@@ -34,17 +34,19 @@ const Reviews = () => {
                     <div className="reviews-slider-wrapper">
                         <div className="reviews-slider-track" style={{ transform: `translateX(-${currentSlide * 87.5}rem)`}}>
                             <div className="reviews-slider-item">
-                                <div className="reviews-image">
+                                <div className="review-image">
                                     <img src={demo} alt="" />
                                 </div>
-                                <div className="review-text-container">
-                                    <div className="review-text-wrapper">
-                                        <div className="review-text-box">
-                                            <div className="review-user-box">
-                                                <img src={demo} alt="" />
-                                                <h5>Samantha A.</h5>
-                                                <span>d</span>
-                                            </div>
+                                <div className="review-container">
+                                    <div className="review-wrapper">
+                                        <div className="review-top-container">
+
+                                        </div>
+                                        <div className="review-mid-container">
+
+                                        </div>
+                                        <div className="review-bot-container">
+                                            
                                         </div>
                                     </div>
                                 </div>

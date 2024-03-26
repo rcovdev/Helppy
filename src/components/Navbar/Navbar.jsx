@@ -35,12 +35,7 @@ const Navbar = () => {
         }
     }, []);
 
-    const currentUser = {
-        id: 1,
-        img: "https://lh3.googleusercontent.com/ogw/AF2bZyjT8zY3J2l5iRpSneFDfRVp66XjjwRS5_LRIXBr=s32-c-mo",
-        username: "Cova",
-        isHelpper: true
-    };
+    const currentUser = false;
 
     return (
         <>
