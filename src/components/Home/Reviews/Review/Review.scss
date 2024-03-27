@@ -1,11 +1,12 @@
-.reviews-slider-item {
+.review__slider-item {
     width: 87.5rem;
+    max-height: 21rem;
     display: flex;
 
-    .review-image {
+    .review__slider-img-container {
         flex: 1.3;
 
-        img {
+        .review__slider-img {
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -17,39 +18,39 @@
     }
 
     &:nth-child(2) {
-        .review-image {
-            img {
+        .review__slider-img-container {
+            .review__slider-img {
                 object-position: 0px -3.2rem;
             }
         }
     }
 
     &:nth-child(4) {
-        .review-image {
-            img {
+        .review__slider-img-container {
+            .review__slider-img {
                 object-position: 0px -7rem;
             }
         }
     }
 
-    .review-container {
+    .review__content-container {
         flex: 2;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .review-wrapper {
+        .review__content-wrapper {
             height: 100%;
             width: 90%;
             display: flex;
             flex-direction: column;
 
-            .review-top-container {
+            .review__user-container {
                 flex: 0.5;
                 display: flex;
                 align-items: center;
 
-                img {
+                .review__user-pp {
                     width: 3rem;
                     height: 3rem;
                     border-radius: 50%;
@@ -58,39 +59,39 @@
                     object-fit: cover;
                 }
 
-                h5 {
+                .review__user-username {
                     color: var(--blue);
                     margin-left: 0.5rem;
                     font-size: 1.5rem;
                     font-weight: 700;
                 }
 
-                .review-verified-icon {
+                .review__verified-icon {
                     color: var(--verified-blue);
                     margin-bottom: 1rem;
                 }
 
-                span {
+                .review__separator-line {
                     margin: 0rem 0.5rem;
                     height: 3rem;
                     border-left: 2px solid var(--blue);
                     border-radius: 1rem;
                 }
 
-                p {
+                .review__service {
                     font-size: 1.5rem;
                     font-weight: 400;
                     color: var(--blue);
                 }
             }
 
-            .review-mid-container {
+            .review__review-container {
                 flex: 3;
                 display: flex;
                 align-items: center;
                 width: 95%;
 
-                p {
+                .review__review {
                     font-size: 1.5rem;
                     font-style: italic;
                     color: var(--blue);
@@ -98,21 +99,21 @@
                 }
             }
 
-            .review-bot-container {
+            .review__helpper-container {
                 flex: 0.5;
                 display: flex;
                 align-items: center;
                 margin-top: 1rem;
                 justify-content: end;
                 
-                p {
+                .review__service-provided {
                     color: var(--blue);
                     font-size: 1.5rem;
                     font-weight: 500;
                     font-family: var(--alt-font);
                 }
 
-                img {
+                .review__helpper-pp {
                     width: 3rem;
                     height: 3rem;
                     border-radius: 50%;
@@ -122,14 +123,14 @@
                     margin-left: 0.5rem;
                 }
 
-                h5 {
+                .review__helpper-username {
                     color: var(--blue);
                     margin-left: 0.5rem;
                     font-size: 1.5rem;
                     font-weight: 700;
                 }
 
-                .review-verified-icon {
+                .review__verified-icon {
                     color: var(--verified-blue);
                     margin-bottom: 1rem;
                 }

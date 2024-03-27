@@ -6,6 +6,7 @@ import Features from "../../components/Home/Features/Features";
 import Services from "../../components/Home/Services/Services";
 import Business from "../../components/Home/Business/Business";
 import Reviews from "../../components/Home/Reviews/Reviews";
+import ServiceStack from "../../components/Home/ServiceStack/ServiceStack";
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <Services />
             <Business />
             <Reviews />
+            <ServiceStack />
         </section>
     )
 }

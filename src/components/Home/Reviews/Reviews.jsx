@@ -39,9 +39,6 @@ const Reviews = () => {
                     </div>
                     <button className="reviews__next-slide-button" onClick={nextSlide}><img className="reviews__next-slide-button-icon" src={RightArrow} alt="reviews-slider-next-arrow" /></button>
                 </div>
-                <div className="reviews__service-stack">
-                    
-                </div>
             </div>
         </section>
     )
