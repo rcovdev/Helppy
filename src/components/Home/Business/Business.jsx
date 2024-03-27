@@ -16,9 +16,9 @@ const Business = () => {
                     </div>
                     <div className="business__items-container">
                         <span className="business__logo-text">helppy</span>
+                        <span className="bussines__logo-extension">business solutions</span>
                         <span className="business__logo-dot">.</span>
-                        <span className="bussines__logo-extension">Business Solutions</span>
-                        <h3 className="business_heading">Easy solutions and top talent for your business.</h3>
+                        <h4 className="business_heading">Easy solutions and top talent for your business.</h4>
                         <div className="business__item-title">
                             <FaRegCheckCircle className="business__item-icon" />
                             Helpper Pro.

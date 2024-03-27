@@ -8,7 +8,7 @@ const Features = () => {
             <div className="features__container">
                 <div className="features__wrapper">
                     <div className="features__items-container">
-                        <h2>AN INCOMPARABLE AMOUNT OF SERVICES IN THE PALM OF YOUR HAND.</h2>
+                        <h3 className="features__heading">AN INCOMPARABLE AMOUNT OF SERVICES IN THE PALM OF YOUR HAND.</h3>
                         <div className="features__feature-title">
                             <FaRegCheckCircle className="features__feature-icon" />
                             Affordable and reliable.

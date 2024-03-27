@@ -10,7 +10,7 @@ const Review = ({item}) => {
             <div className="review__content-container">
                 <div className="review__content-wrapper">
                     <div className="review__user-container">
-                        <img className="review__user-pp" src={item.userPP} alt="review-user-container-img" />
+                        <img className="review__user-pp" src={item.userPP} alt="review-user-pp" />
                         <h5 className="review__user-username">{item.username}</h5>
                         <MdVerified className="review__verified-icon" />
                         <span className="review__separator-line"></span>
@@ -21,7 +21,7 @@ const Review = ({item}) => {
                     </div>
                     <div className="review__helpper-container">
                         <p className="review__service-provided">Service Provided By:</p>
-                        <img className="review__helpper-pp" src={item.helpperPP} alt="" />
+                        <img className="review__helpper-pp" src={item.helpperPP} alt="review-helpper-pp" />
                         <h5 className="review__helpper-username">{item.helpperUsername}</h5>
                         <MdVerified className="review__verified-icon" />
                     </div>
