@@ -41,71 +41,71 @@ export const LINKS = [
     },
 ];
 
-export const cards = [
+export const popular = [
     {
         id: 1,
         title: "Lighting Solutions",
-        desc: "Brighten your space, enhance your mood.",
+        desc: "Light Up Life.",
         img: "../public/images/popular/lighting-solutions.jpg",
     },
     {
         id: 2,
         title: "Smart Home Setup",
-        desc: "Simplify life with automated home technology.",
+        desc: "Smart Home Simplified.",
         img: "../public/images/popular/smart-home.jpg",
     },
     {
         id: 3,
         title: "Custom Woodwork",
-        desc: "Tailored wood designs for your space.",
+        desc: "Crafted Wood Elegance.",
         img: "../public/images/popular/custom-woodwork.jpg",
     },
     {
         id: 4,
         title: "Lawn Care",
-        desc: "Keep your lawn lush and lovely.",
+        desc: "Pristine Lawn Service.",
         img: "../public/images/popular/lawn-care.jpg",
     },
     {
         id: 5,
         title: "Garden Design",
-        desc: "Transform your garden into a paradise.",
+        desc: "Blossoming Garden Art.",
         img: "../public/images/popular/garden-desing.jpg",
     },
     {
         id: 6,
         title: "Deep Clean",
-        desc: "Spotless homes, happier lives.",
+        desc: "Sparkling Clean Home.",
         img: "../public/images/popular/deep-clean.jpg",
     },
     {
         id: 7,
-        title: "Eco-Friendly Cleaning",
-        desc: "Clean green, live well.",
+        title: "Eco-Friendly Clean",
+        desc: "Green Clean Living.",
         img: "../public/images/popular/eco-friendly-clean.jpg",
     },
     {
         id: 8,
         title: "Interior Painting",
-        desc: "Fresh colors for vibrant living.",
+        desc: "Colorful Walls Renewed.",
         img: "../public/images/popular/interior-painting.jpg",
     },
     {
         id: 9,
         title: "Auto Repair",
-        desc: "Precision for your ride.",
+        desc: "Precision Auto Care.",
         img: "../public/images/popular/auto-repair.jpg",
     },
     {
         id: 10,
         title: "Pet Grooming",
-        desc: "Happy pets, happy homes.",
+        desc: "Pampered Pet Styling.",
         img: "../public/images/popular/pet-grooming.jpg",
     },
     {
         id: 11,
         title: "Leak Fixes",
-        desc: "Say goodbye to drips and leaks.",
+        desc: "Swift Leak Solutions.",
         img: "../public/images/popular/leak-repair.jpg",
     },
 ];

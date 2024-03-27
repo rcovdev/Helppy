@@ -1,4 +1,4 @@
-import { cards } from "../../data";
+import { popular } from "../../data";
 import Featured from "../../components/Home/Featured/Featured";
 import Slider from "../../components/Home/Slider/Slider";
 import ServiceCard from "../../components/Home/ServiceCard/ServiceCard";
@@ -12,8 +12,8 @@ const Home = () => {
         <section className="home">
             <Featured />
             <Slider>
-                {cards.map(card => (
-                    <ServiceCard key={card.id} item={card} />
+                {popular.map(service => (
+                    <ServiceCard key={service.id} item={service} />
                 ))}
             </Slider>
             <Features />
