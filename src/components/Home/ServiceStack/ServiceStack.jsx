@@ -1,4 +1,5 @@
 import "./ServiceStack.scss";
+import demo from "../../../../public/images/demo.png";
 
 const ServiceStack = () => {
     return (
@@ -22,7 +23,7 @@ const ServiceStack = () => {
                         </button>
                     </div>
                     <div className="service-stack__img-container">
-
+                        <img className="service-stack__img" src={demo} alt="" />
                     </div>
                 </div>
             </div>

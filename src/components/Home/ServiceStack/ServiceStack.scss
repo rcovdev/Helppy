@@ -1,5 +1,5 @@
 .service-stack {
-    padding: 2.5rem 0 6rem 0;
+    padding: 3rem 0 4rem 0;
     background-color: var(--light-blue);
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
             display: flex;
 
             .service-stack__content-container {
-                flex: 1;
+                flex: 1.5;
                 height: 100%;
                 display: flex;
                 align-items: star;
@@ -76,9 +76,18 @@
             }
 
             .service-stack__img-container {
-                flex: 2;
+                flex: 1.7;
                 height: 100%;
-                background-color: crimson;
+                display: flex;
+                align-items: end;
+                justify-content: end;
+
+                .service-stack__img {
+                    width: 100%;
+                    height: 113%;
+                    object-fit: cover;
+                    object-position: 0 0;
+                }
             }
         }
     }
