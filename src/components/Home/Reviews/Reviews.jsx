@@ -3,7 +3,8 @@ import LeftArrow from "../../../../public/assets/LeftArrow.svg";
 import RightArrow from "../../../../public/assets/RightArrow.svg";
 import { useState } from "react";
 import { reviews } from "../../../data";
-import demo from "../../../../public/images/demo.jpg"
+import Review from "./Review/Review";
+
 
 const Reviews = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -33,24 +34,9 @@ const Reviews = () => {
                     <button className="reviews-slider-prev" onClick={prevSlide}><img src={LeftArrow} alt="reviews-slider-previous-arrow" /></button>
                     <div className="reviews-slider-wrapper">
                         <div className="reviews-slider-track" style={{ transform: `translateX(-${currentSlide * 87.5}rem)`}}>
-                            <div className="reviews-slider-item">
-                                <div className="review-image">
-                                    <img src={demo} alt="" />
-                                </div>
-                                <div className="review-container">
-                                    <div className="review-wrapper">
-                                        <div className="review-top-container">
-
-                                        </div>
-                                        <div className="review-mid-container">
-
-                                        </div>
-                                        <div className="review-bot-container">
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {reviews.map(review => (
+                                <Review key={review.id} item={review}/>
+                            ))}
                         </div>
                     </div>
                     <button className="reviews-slider-next" onClick={nextSlide}><img src={RightArrow} alt="reviews-slider-next-arrow" /></button>

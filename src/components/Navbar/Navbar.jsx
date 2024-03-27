@@ -8,7 +8,6 @@ import Menu from "./Menu/Menu";
 
 const Navbar = () => {
     const [active, setActive] = useState(false);
-    const [display, setDisplay] = useState(false);
     const [open, setOpen] = useState(false);
 
     const isActive = () => { 
@@ -23,55 +22,46 @@ const Navbar = () => {
         }
     }, []);
 
-    const displaySearch = () => {
-        window.scrollY > 280 ? setDisplay(true) : setDisplay(false);
-    }
-
-    useEffect(() => {
-        window.addEventListener("scroll", displaySearch);
-
-        return () => {
-            window.removeEventListener("scroll", displaySearch)
-        }
-    }, []);
-
-    const currentUser = false;
+    const currentUser = {
+        id: 1,
+        img: "https://lh3.googleusercontent.com/ogw/AF2bZyjT8zY3J2l5iRpSneFDfRVp66XjjwRS5_LRIXBr=s32-c-mo",
+        username: "Cova",
+        isHelpper: true
+    };
 
     return (
         <>
-            <header className={active ? "navbar active" : "navbar"}>
-                <div className="container">
-                    <div className="logo">
-                        <Link to={"/"} className="link">
-                            <span className="text">helppy</span>
-                            <span className="dot">.</span>
+            <header className={`navbar ${active ? "navbar--active" : ""}`}>
+                <div className="navbar__container">
+                    <div className="navbar__logo">
+                        <Link to={"/"} className="navbar__link">
+                            <span className="navbar__logo-text">helppy</span>
+                            <span className="navbar__logo-dot">.</span>
                         </Link>
                     </div>
-                    <div className="search-container">
-                        <Search className={display ? "search show" : "search"} />
-                    </div>
-                    <nav className="links">
+                    <Search />
+                    <nav className="navbar__links">
                         <span>Helppy Business</span>
                         <span>Explore</span>
                         <span>English</span>
-                        {!currentUser?.isHelpper && <Link to={"/register"} className="link">Become a Helpper</Link>}
-                        {!currentUser && <Link to={"/login"} className="link">Sign In</Link>}
-                        {!currentUser && <button className={active && "active"}>Sign Up</button>}
+                        {!currentUser?.isHelpper && <Link to={"/register"} className="navbar__register">Become a Helpper</Link>}
+                        {!currentUser && <Link to={"/login"} className="navbar__login">Sign In</Link>}
+                        {!currentUser && <button className={`navbar__signup ${active ? "active" : ""}`}>Sign Up</button>}
                         {currentUser && (
-                            <div className="user" onClick={() => setOpen(!open)}>
-                                <img src={currentUser.img} alt="" />
+                            <div className="navbar__user" onClick={() => setOpen(!open)}>
+                                <img className="navbar__user-img" src={currentUser.img} alt="navbar-user-profile-picture" />
                                 <span>{currentUser?.username}</span>
                                 {open && (
-                                    <ul className="options">
+                                    <ul className="navbar__user-options">
                                         {currentUser?.isHelpper && (
                                             <>
-                                                <li><Link to={"/events"} className="link">Events</Link></li>
-                                                <li><Link to={"/new-event"} className="link">New Event</Link></li>
+                                                <li><Link to={"/events"} className="navbar__events">Events</Link></li>
+                                                <li><Link to={"/new-event"} className="navbar__new-event">New Event</Link></li>
                                             </>
                                         )}
-                                        <li><Link to={"/orders"} className="link">Active Events</Link></li>
-                                        <li><Link to={"/messages"} className="link">Messages</Link></li>
-                                        <li><span>Log Out</span></li>
+                                        <li><Link to={"/orders"} className="navbar__active-events">Active Events</Link></li>
+                                        <li><Link to={"/messages"} className="navbar__messages">Messages</Link></li>
+                                        <li><span className="navbar__logout">Log Out</span></li>
                                     </ul>
                                 )}
                             </div>
@@ -79,9 +69,7 @@ const Navbar = () => {
                     </nav>
                 </div>
             </header>
-            <nav className={display ? "services show" : "services"}>
-                <Menu className="menu" />
-            </nav>
+            <Menu />
         </>
     )
 }
