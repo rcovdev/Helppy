@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const Services = () => {
     return (
-        <section className="our-services">
-            <div className="container">
+        <section className="services">
+            <div className="services__container">
                 {services.map((service) => (
-                    <div key={service.id} className="service">
-                        <Link to={`/${service.title}`} className="link">
-                            <span className="icon">{service.icon}</span>
-                            <span className="title">{service.title}</span>
+                    <div key={service.id} className="services__service">
+                        <Link to={`/${service.title}`} className="services__service-link">
+                            <span className="services__service-link-icon">{service.icon}</span>
+                            <span className="services__service-link-title">{service.title}</span>
                         </Link>
                     </div>
                 ))}

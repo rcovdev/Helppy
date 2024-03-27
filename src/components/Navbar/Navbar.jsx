@@ -22,12 +22,7 @@ const Navbar = () => {
         }
     }, []);
 
-    const currentUser = {
-        id: 1,
-        img: "https://lh3.googleusercontent.com/ogw/AF2bZyjT8zY3J2l5iRpSneFDfRVp66XjjwRS5_LRIXBr=s32-c-mo",
-        username: "Cova",
-        isHelpper: true
-    };
+    const currentUser = false;
 
     return (
         <>
@@ -46,11 +41,11 @@ const Navbar = () => {
                         <span>English</span>
                         {!currentUser?.isHelpper && <Link to={"/register"} className="navbar__register">Become a Helpper</Link>}
                         {!currentUser && <Link to={"/login"} className="navbar__login">Sign In</Link>}
-                        {!currentUser && <button className={`navbar__signup ${active ? "active" : ""}`}>Sign Up</button>}
+                        {!currentUser && <button className={`navbar__signup-button ${active ? "navbar__signup--active" : ""}`}>Sign Up</button>}
                         {currentUser && (
                             <div className="navbar__user" onClick={() => setOpen(!open)}>
                                 <img className="navbar__user-img" src={currentUser.img} alt="navbar-user-profile-picture" />
-                                <span>{currentUser?.username}</span>
+                                <span className="navbar__username">{currentUser?.username}</span>
                                 {open && (
                                     <ul className="navbar__user-options">
                                         {currentUser?.isHelpper && (

@@ -1,16 +1,16 @@
-.our-services {
+.services {
     background-color: var(--light-blue);
     display: flex;
     justify-content: center;
     padding: 5rem 0;
 
-    .container {
+    .services__container {
         width: 87.5rem;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
-        .service {
+        .services__service {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -26,12 +26,14 @@
                 padding-bottom: 3rem;
             }
 
-            .link {
+            .services__service-link {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
+                text-decoration: none;
+                color: inherit;
 
                 &::after {
                     content: ""; // NEEDED FOR DISPLAY
@@ -50,12 +52,12 @@
                 }
             }
 
-            .icon {
+            .services__service-link-icon {
                 font-size: 2.813rem;
                 color: var(--blue);
             }
 
-            .title {
+            .services__service-link-title {
                 font-size: 1.2rem;
                 color: var(--blue);
                 font-family: var(--alt-font);

@@ -33,5 +33,10 @@
         font-weight: 500;
         color: var(--blue);
         font-family: var(--alt-font);
+
+        .navbar__subnav-link {
+            text-decoration: none;
+            color: inherit;
+        }
     }
 }

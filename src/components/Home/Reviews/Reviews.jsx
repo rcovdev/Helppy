@@ -25,24 +25,22 @@ const Reviews = () => {
         }
     }
 
-    console.log(currentSlide)
-
     return (
         <section className="reviews">
-            <div className="container">
-                <div className="reviews-slider-container">
-                    <button className="reviews-slider-prev" onClick={prevSlide}><img src={LeftArrow} alt="reviews-slider-previous-arrow" /></button>
-                    <div className="reviews-slider-wrapper">
-                        <div className="reviews-slider-track" style={{ transform: `translateX(-${currentSlide * 87.5}rem)`}}>
+            <div className="reviews__container">
+                <div className="reviews__slider-container">
+                    <button className="reviews__prev-slide-button" onClick={prevSlide}><img className="reviews__prev-slide-button-icon" src={LeftArrow} alt="reviews-slider-previous-arrow" /></button>
+                    <div className="reviews__slider-wrapper">
+                        <div className="reviews__slider-track" style={{ transform: `translateX(-${currentSlide * 87.5}rem)`}}>
                             {reviews.map(review => (
                                 <Review key={review.id} item={review}/>
                             ))}
                         </div>
                     </div>
-                    <button className="reviews-slider-next" onClick={nextSlide}><img src={RightArrow} alt="reviews-slider-next-arrow" /></button>
+                    <button className="reviews__next-slide-button" onClick={nextSlide}><img className="reviews__next-slide-button-icon" src={RightArrow} alt="reviews-slider-next-arrow" /></button>
                 </div>
-                <div className="full-service">
-
+                <div className="reviews__service-stack">
+                    
                 </div>
             </div>
         </section>

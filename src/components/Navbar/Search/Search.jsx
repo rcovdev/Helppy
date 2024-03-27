@@ -18,14 +18,14 @@ const Search = () => {
     }, []);
 
     return (
-        <div className="navbar__search-container">
-            <div className={`navbar__search ${display ? "navbar__search--visible" : ""}`}>
-                <div className="navbar__search-input">
+        <div className="navbar__search-bar-container">
+            <div className={`navbar__search-bar ${display ? "navbar__search-bar--visible" : ""}`}>
+                <div className="navbar__search-bar-input">
                     <FaSearch style={{ color: "var(--blue)", fontSize: "1.2rem", marginLeft: "1rem"}} />
-                    <input className="navbar__search-input-field" type="text" placeholder="Service..." />
+                    <input className="navbar__search-bar-input-field" type="text" placeholder="Service..." />
                 </div>
-                <div className="navbar__search-button-container">
-                    <button className="navbar__search-button">Search</button>
+                <div className="navbar__search-bar-button-container">
+                    <button className="navbar__search-bar-button">Search</button>
                 </div>
             </div>
         </div>

@@ -45,14 +45,14 @@ const Slider = ({children}) => {
 
     return (
         <section className="slider">
-            <div className="container">
-                <button className="prev-button" onClick={prevSlide}><img src={LeftArrow} alt="previous-slide-button" /></button>
-                <div className="wrapper">
-                    <div className="slider-track" ref={SLIDER_REF}>
+            <div className="slider__container">
+                <button className="slider__prev-button" onClick={prevSlide}><img className="slider__prev-button-icon" src={LeftArrow} alt="previous-slide-button" /></button>
+                <div className="slider__wrapper">
+                    <div className="slider__slider-track" ref={SLIDER_REF}>
                         {children}
                     </div>
                 </div>
-                <button className="next-button" onClick={nextSlide}><img src={RightArrow} alt="next-slide-button" /></button>
+                <button className="slider__next-button" onClick={nextSlide}><img className="slider__next-button-icon" src={RightArrow} alt="next-slide-button" /></button>
             </div>
         </section>
     )

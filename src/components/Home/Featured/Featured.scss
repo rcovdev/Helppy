@@ -6,29 +6,30 @@
     color: var(--light-blue);
     z-index: -1;
 
-    .container {
+    .featured__container {
         width: 87.5rem;
         display: flex;
         align-items: center;
     }
 
-    .hero {
+    .featured__header {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 2.5rem;
         font-family: var(--alt-font);
+        flex: 1;
 
-        h1 {
+        .featured__header-heading {
             font-size: 2.5rem;
             line-height: 4rem;
             font-weight: normal;
         }
 
-        .search {
+        .featured__search-bar {
             display: flex;
-            height: 2.5rem;
+            height: 3rem;
             
-            .search-input {
+            .featured__search-bar-input {
                 width: 80%;
                 height: 100%;
                 display: flex;
@@ -36,7 +37,7 @@
                 background-color: var(--light-blue);
                 border-radius: 2rem 0 0 2rem;
                 
-                input {
+                .featured__search-bar-input-field {
                     height: 100%;
                     outline: none;
                     border: none;
@@ -46,6 +47,7 @@
                     overflow: hidden;
                     font-weight: bold;
                     color: var(--blue);
+                    font-size: 1rem;
 
                     &::placeholder {
                         color: var(--gray);
@@ -54,13 +56,13 @@
                 }
             }
             
-            .button-container {
+            .featured__button-container {
                 height: 100%;
                 border: 2px solid var(--light-blue);
                 display: flex;
                 border-radius: 0 2rem 2rem 0;
 
-                button {
+                .featured__search-bar-button {
                     width: 100%;
                     background-color: transparent;
                     border: none;
@@ -73,7 +75,7 @@
             }
         }
 
-        .popular {
+        .featured__popular-services {
             display: flex;
             align-items: center;
             gap: 1rem;
@@ -95,10 +97,12 @@
         }
     }
 
-    .image {
+    .featured__hero-img-container {
         display: flex;
         z-index: 1;
-        img {
+        flex: 1;
+
+        .featured__hero-img {
             max-height: 37.5rem;
             -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
